@@ -66,26 +66,30 @@
           </p>
         </div>
       </div>
-
-        <form class="myform">
+        <form class="myform" action="https://formsubmit.co/emerson8096@gmail.com" method="POST">
           <fieldset>
             <div class="fieldset-wrapper">
               <legend>Entre em contato</legend>
-  
+              <!-- alguma coisa -->
+              
+              
               <div class="input-wrapper">
                 <label for="person">
                   <img src="./assets/person.svg" alt="Ícone de uma pessoa">
                 </label>
-                <input type="text" name="person" id="person" required placeholder="Seu nome"/>
+                <!-- <input type="text" name="person" id="person" required placeholder="Seu nome"/> -->
+                <input type="text" name="name" placeholder="Seu nome" required>
               </div>
   
               <div class="input-wrapper">
                 <img src="./assets/at.svg" alt="Imagem de um @">
-                <input type="email" placeholder="Email" />
+                <!-- <input type="email" placeholder="Email" /> -->
+                <input type="email" name="email" placeholder="Email" required>
               </div>
   
               <div class="input-wrapper">
-                <textarea id="event-info" placeholder="Digite sua mensagem aqui..."></textarea>
+                <!-- <textarea id="event-info" placeholder="Digite sua mensagem aqui..."></textarea> -->
+                <textarea name="message" placeholder="Digite sua mensagem aqui..."></textarea>
               </div>
               <button class="mybutton" type="submit">Enviar mensagem</button>
             </div>
