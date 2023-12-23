@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: #ffffff;
+  --color-base-black: #000000;
+  --color-base-pink: #B52184;
+  --color-base-dark-blue: #312D64;
+  --color-base-blue-footer: #343193;
+  --color-base-dark-blue-footer: #302C63;
+}
+
+html,
+body,
+input {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-base-white);
+  color: var(--color-base-black);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+  width: 100%;
+}
+
+header .headerDiv h1{
+  font-weight: 900;
+  font-size: 3.2rem;
+
+  color: var(--color-base-pink);
+}
+
+header .headerDiv p {
+  font-weight: 600;
+  font-size: 2rem;
+
+  color: var(--color-base-dark-blue);
+}
+
+header #setaparaBaixo {
+  margin-bottom: 5rem;
+}
+
+main {
+  background-color: var(--color-base-white);
+}
+
+main .mainDiv {
+  background-color: var(--color-base-dark-blue);
+
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 4rem;
+  gap: 5rem;
+}
+
+main .mainDiv .cards {
+  background-color: var(--color-base-white);
+  padding: 2.6rem;
+
+  border-radius: 2rem;
+}
+
+main .cards h3 {
+  margin: 1rem 0 .5rem;
+
+  font-size: 3rem;
+  font-weight: 900;
+
+  color: var(--color-base-pink);
+}
+
+main .mainDiv .cards p {
+  font-size: 1.6rem;
+
+  color: var(--color-base-dark-blue);
+
+  text-align: justify;
+}
+
+main .myform {
+  margin-top: 6rem;
+  background: var(--color-base-white);
+  min-height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+fieldset {
+  border: none;
+  margin: 2rem;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+fieldset legend {
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  border-bottom: 1px solid #e6e6f0;
+
+  color: var(--color-base-pink);
+}
+
+.input-wrapper input::placeholder {
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  color: var(--color-base-dark-blue);
+}
+
+.input-wrapper input,
+.input-wrapper textarea{
+  background: var(--color-base-white);
+
+  border: 2px solid var(--color-base-dark-blue);
+  border-radius: 1.6rem;
+
+  padding: 0 1.4rem;
+
+  font-size: 1.6rem;
+
+  color: var(--color-base-dark-blue);
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 10rem;
+  width: 100%;
+}
+
+.input-wrapper textarea::placeholder {
+  padding: 1.2rem 1.6rem 1.6rem;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+
+  color: var(--color-base-dark-blue);
+}
+
+.mybutton {
+  border: 0;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  width: fit-content;
+
+  background-color: var(--color-base-dark-blue);
+  color: var(--color-base-white);
+}
+
+footer {
+  margin-top: 6.5rem;
+  background: linear-gradient(96deg, var(--color-base-blue-footer) 0%, var(--color-base-dark-blue-footer) 99.68%);
+}
+
+footer p {
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+  font-weight: 600;
+
+  color: var(--color-base-white);
+}
+
+@media (min-width: 1000px) {
+  main .container {
+    display: flex;
+    margin-top: 4.4rem;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .action {
+    margin-top: 0;
+  }
+
+  .content {
+    padding: 0 0 3.9rem 2rem;
+  }
+
+  .content1 {
+    gap: 1rem;
+  }
+
+  .content1 h2 {
+    margin-top: 0;
+  }
+}
+
+.item1 {
+  --delay: 0.4s;
+  animation: appear 0.4s var(--delay) backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
