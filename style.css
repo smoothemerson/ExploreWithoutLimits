@@ -152,14 +152,12 @@ fieldset legend {
 }
 
 .input-wrapper textarea {
-  padding: 0;
+  padding: 1.2rem 1.6rem 1.6rem;
   height: 10rem;
   width: 100%;
 }
 
 .input-wrapper textarea::placeholder {
-  padding: 1.2rem 1.6rem 1.6rem;
-
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -196,51 +194,5 @@ footer p {
 }
 
 @media (min-width: 1000px) {
-  main .container {
-    display: flex;
-    margin-top: 4.4rem;
-  }
-
-  .img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .action {
-    margin-top: 0;
-  }
-
-  .content {
-    padding: 0 0 3.9rem 2rem;
-  }
-
-  .content1 {
-    gap: 1rem;
-  }
-
-  .content1 h2 {
-    margin-top: 0;
-  }
-}
-
-.item1 {
-  --delay: 0.4s;
-  animation: appear 0.4s var(--delay) backwards;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
+  
 }
