@@ -20,7 +20,8 @@
 html,
 body,
 input,
-textarea {
+textarea,
+button {
   font-family: "Mulish", sans-serif;
 }
 
