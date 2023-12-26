@@ -1,4 +1,5 @@
-.vercel,
-github,
-assets,
+vercel/
+github/
+assets/
 gitignore
+README.md
