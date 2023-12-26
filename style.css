@@ -27,6 +27,7 @@ button {
 
 body {
   font-size: 1.6rem;
+
   background-color: var(--color-base-white);
   color: var(--color-base-black);
 }
@@ -38,11 +39,12 @@ body {
 
 header {
   padding: 0 3.2rem;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.7rem;
-  width: 100%;
 }
 
 .headerDiv {
@@ -73,9 +75,17 @@ main {
   background-color: var(--color-base-white);
 }
 
-main .mainDiv {
-  background-color: var(--color-base-dark-blue);
+main .mainDiv,
+button,
+footer {
+  background: linear-gradient(
+    96deg,
+    var(--color-base-blue-footer) 0%,
+    var(--color-base-dark-blue-footer) 99.68%
+  );
+}
 
+main .mainDiv {
   display: flex;
   flex-direction: column;
   padding: 5rem 4rem;
@@ -107,8 +117,9 @@ main .mainDiv .cards p {
 }
 
 main .myform {
-  margin-top: 6rem;
   background: var(--color-base-white);
+
+  margin-top: 6rem;
   min-height: 40rem;
 
   display: flex;
@@ -137,11 +148,11 @@ fieldset legend {
 }
 
 input {
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 textarea {
-  max-width: 100rem;
+  max-width: 60rem;
 }
 
 .input-wrapper-special input::placeholder,
@@ -226,11 +237,6 @@ textarea {
 
 footer {
   margin-top: 6.5rem;
-  background: linear-gradient(
-    96deg,
-    var(--color-base-blue-footer) 0%,
-    var(--color-base-dark-blue-footer) 99.68%
-  );
 }
 
 footer p {
@@ -245,17 +251,18 @@ footer p {
   header {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
     padding: 0 3rem;
     margin: 10rem;
-    align-items: center;
   }
 
   #astronauta {
     order: 1;
     margin-left: auto;
 
-    width: 100%;
     max-width: 60rem;
+    width: 100%;
     height: auto;
   }
 
@@ -264,7 +271,9 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
     width: 100%;
+
     margin-bottom: 0;
   }
 
