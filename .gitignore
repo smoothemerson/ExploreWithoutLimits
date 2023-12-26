@@ -1,5 +1,5 @@
-vercel/
-github/
-assets/
-gitignore
+.vercel
+github
+assets
+.gitignore
 README.md
