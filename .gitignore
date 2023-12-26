@@ -1,1 +1,4 @@
-.vercel
+.vercel,
+github,
+assets,
+gitignore
