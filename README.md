@@ -17,6 +17,7 @@ This project was developed with the following technologies:
 
 - HTML and CSS
 - Git and GitHub
+- Figma
 
 ## 💻 Project
 
