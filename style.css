@@ -11,20 +11,23 @@
 
   --color-base-white: #ffffff;
   --color-base-black: #000000;
-  --color-base-pink: #B52184;
-  --color-base-dark-blue: #312D64;
+  --color-base-pink: #b52184;
+  --color-base-dark-blue: #312d64;
   --color-base-blue-footer: #343193;
-  --color-base-dark-blue-footer: #302C63;
+  --color-base-dark-blue-footer: #302c63;
 }
 
 html,
 body,
-input {
-  font-family: 'Mulish', sans-serif;
+input,
+textarea,
+button {
+  font-family: "Mulish", sans-serif;
 }
 
 body {
   font-size: 1.6rem;
+
   background-color: var(--color-base-white);
   color: var(--color-base-black);
 }
@@ -36,14 +39,23 @@ body {
 
 header {
   padding: 0 3.2rem;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.7rem;
-  width: 100%;
 }
 
-header .headerDiv h1{
+.headerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+header .headerDiv h1 {
   font-weight: 900;
   font-size: 3.2rem;
 
@@ -55,19 +67,25 @@ header .headerDiv p {
   font-size: 2rem;
 
   color: var(--color-base-dark-blue);
-}
 
-header #setaparaBaixo {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 main {
   background-color: var(--color-base-white);
 }
 
-main .mainDiv {
-  background-color: var(--color-base-dark-blue);
+main .mainDiv,
+button,
+footer {
+  background: linear-gradient(
+    96deg,
+    var(--color-base-blue-footer) 0%,
+    var(--color-base-dark-blue-footer) 99.68%
+  );
+}
 
+main .mainDiv {
   display: flex;
   flex-direction: column;
   padding: 5rem 4rem;
@@ -82,7 +100,7 @@ main .mainDiv .cards {
 }
 
 main .cards h3 {
-  margin: 1rem 0 .5rem;
+  margin: 1rem 0 0.5rem;
 
   font-size: 3rem;
   font-weight: 900;
@@ -99,8 +117,9 @@ main .mainDiv .cards p {
 }
 
 main .myform {
-  margin-top: 6rem;
   background: var(--color-base-white);
+
+  margin-top: 6rem;
   min-height: 40rem;
 
   display: flex;
@@ -128,17 +147,24 @@ fieldset legend {
   color: var(--color-base-pink);
 }
 
-.input-wrapper input::placeholder {
-  padding: 1.6rem;
+input {
+  max-width: 60rem;
+}
 
+textarea {
+  max-width: 60rem;
+}
+
+.input-wrapper-special input::placeholder,
+.input-wrapper-special input {
   font-size: 1.6rem;
   font-weight: 600;
 
   color: var(--color-base-dark-blue);
 }
 
-.input-wrapper input,
-.input-wrapper textarea{
+.input-wrapper-special input,
+.input-wrapper textarea {
   background: var(--color-base-white);
 
   border: 2px solid var(--color-base-dark-blue);
@@ -151,15 +177,36 @@ fieldset legend {
   color: var(--color-base-dark-blue);
 }
 
+.input-wrapper-special {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.input-wrapper-special input {
+  padding: 1rem 1rem 1rem 2rem;
+
+  width: 100%;
+
+  text-indent: 3rem;
+}
+
 .input-wrapper textarea {
-  padding: 0;
+  padding: 1.2rem 1.6rem 1.6rem;
   height: 10rem;
   width: 100%;
+
+  font-weight: 600;
 }
 
 .input-wrapper textarea::placeholder {
-  padding: 1.2rem 1.6rem 1.6rem;
-
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -180,11 +227,16 @@ fieldset legend {
 
   background-color: var(--color-base-dark-blue);
   color: var(--color-base-white);
+
+  text-align: center;
+}
+
+.riskImg {
+  display: none;
 }
 
 footer {
   margin-top: 6.5rem;
-  background: linear-gradient(96deg, var(--color-base-blue-footer) 0%, var(--color-base-dark-blue-footer) 99.68%);
 }
 
 footer p {
@@ -196,51 +248,68 @@ footer p {
 }
 
 @media (min-width: 1000px) {
-  main .container {
+  header {
     display: flex;
-    margin-top: 4.4rem;
-  }
-
-  .img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .div {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+
+    padding: 0 3rem;
+    margin: 10rem;
   }
 
-  .action {
-    margin-top: 0;
+  #astronauta {
+    order: 1;
+    margin-left: auto;
+
+    max-width: 60rem;
+    width: 100%;
+    height: auto;
   }
 
-  .content {
-    padding: 0 0 3.9rem 2rem;
+  .headerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-bottom: 0;
   }
 
-  .content1 {
-    gap: 1rem;
+  header .headerDiv h1 {
+    font-size: 5rem;
   }
 
-  .content1 h2 {
-    margin-top: 0;
-  }
-}
-
-.item1 {
-  --delay: 0.4s;
-  animation: appear 0.4s var(--delay) backwards;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
+  header .headerDiv p {
+    margin-bottom: 5rem;
   }
 
-  50% {
-    transform: scale(1.2);
+  main .mainDiv {
+    flex-direction: row;
+  }
+
+  .cards {
+    flex: 1;
+    background-color: var(--color-base-white);
+    padding: 2.6rem;
+    border-radius: 2rem;
+  }
+
+  .secondPart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .myform {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .riskImg {
+    display: block;
+    margin-left: auto;
   }
 }
