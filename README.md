@@ -25,7 +25,7 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-- [Access the finished project, online](https://aoba43.github.io/Intensivao4_exercise1/)
+- [Access the finished project, online](https://smoothemerson.github.io/ExploreWithoutLimits/)
 
 - Project given by Rocketseat to practice HTML and CSS
 
