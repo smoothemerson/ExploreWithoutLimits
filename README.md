@@ -1,4 +1,4 @@
-<h1 align="center"> Explore Without Limits </h1>
+<h1 align="center"> ExploreWithoutLimits </h1>
 
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -27,8 +27,4 @@ This project was developed with the following technologies:
 
 - [Access the finished project, online](https://smoothemerson.github.io/ExploreWithoutLimits/)
 
-- Project given by Rocketseat to practice HTML and CSS
-
-## :memo: License
-
-This project is under the MIT license.
+- Project given by Rocketseat in Intensive of the Explorer Course
